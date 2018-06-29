@@ -22,15 +22,13 @@ module.exports = {
     'jsx-a11y',
     'import'
   ],
-  'settings': {
-    'import/core-modules': [ 'react', 'react-dom' ]
-  },
   'rules': {
     'no-tabs': 0,
     'indent': ['error', 'tab', { 'SwitchCase': 1 }],
     'semi': ['error', 'never'],
     'max-len': ['error', { 'code': 120, 'ignoreUrls': true }],
     'import/extensions': 0,
+    'import/no-extraneous-dependencies': ['error', { 'peerDependencies': true }],
     'no-console': ['warn'],
     'no-unused-vars': ['warn'],
     'consistent-return': 0,
@@ -39,6 +37,7 @@ module.exports = {
     'quotes': ['error', 'single'],
     'arrow-parens': ['error', 'as-needed'],
     'arrow-body-style': 0,
+    'function-paren-newline': 0,
     'react/prop-types': 0,
     'react/jsx-indent': [2, 'tab'],
     'jsx-quotes': ['error', 'prefer-single'],
